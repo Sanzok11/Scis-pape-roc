@@ -9,17 +9,17 @@ let randomindex = Math.floor(Math.random() * spr.length);
 let randomchoice = spr[randomindex];
 
 
-
-btns[0].onclick = () => {
-    humanChoice.innerHTML = '';
-    humanChoice.innerHTML = 'PAPER';
+const showChoice = () => {
+    btns[0].onclick = () => {
+        humanChoice.innerHTML = '';
+        humanChoice.innerHTML = 'PAPER';
+    }
+    btns[1].onclick = () => {
+        humanChoice.innerHTML = '';
+        humanChoice.innerHTML = 'ROCK';
+    }
+    btns[2].onclick = () => {
+        humanChoice.innerHTML = '';
+        humanChoice.innerHTML = 'SCISSOR';
+    }
 }
-btns[1].onclick = () => {
-    humanChoice.innerHTML = '';
-    humanChoice.innerHTML = 'ROCK';
-}
-btns[2].onclick = () => {
-    humanChoice.innerHTML = '';
-    humanChoice.innerHTML = 'SCISSOR';
-}
-
